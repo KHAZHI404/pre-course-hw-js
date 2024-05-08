@@ -7,7 +7,7 @@ let passportMarried = {
     }
 };
 
-let passportMarried2 = {...passportMarried, address: {...passportMarried.address }}
+let passportMarried2 = structuredClone(passportMarried)
 passportMarried2.marries = true
 
 console.log(passportMarried)
